@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    color: #2e2e2e;
+    background-color: #eaf5ea; /* Fondo claro ecológico */
+}
+
+/* Estilos de la barra de navegación */
+nav {
+    background-color: #4CAF50; /* Verde para el tema ecológico */
+    padding: 10px;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+nav ul li a:hover {
+    color: #f0f0f0;
+}
+
+/* Estilos de la sección principal */
+.hero {
+    text-align: center;
+    padding: 50px;
+    background-image: url('/images/imagen2.jpg'); /* Cambiar la URL para agregar una imagen de fondo */
+    background-size: cover;
+    color: white;
+}
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.hero p {
+    font-size: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    color: white;
+}
+
+/* Estilos de la sección de servicios */
+.services {
+    text-align: center;
+    padding: 50px 20px;
+}
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #4CAF50;
+}
+.services .service-item {
+    display: inline-block;
+    width: 350px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+.services .service-item h3 {
+    color: #2e2e2e;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.services .service-item p {
+    font-size: 16px;
+    color: #5a5a5a;
+}
+
+/* Estilos de la sección de contacto */
+.contact {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.contact p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.contact a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+.contact a:hover {
+    color: white;
+}
