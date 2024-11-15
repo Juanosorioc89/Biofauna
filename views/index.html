@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>Index</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="/views/pages/medioAmbiente.html">Contaminación</a></li>
+            <li><a href="/views/pages/especies.html">Fauna</a></li>
+            <li><a href="/views/pages/ecohogar.html">Ecohogar</a></li>
+            <li><a href="/views/pages/tecnologia.html">Tecnología</a></li>
+        </ul>
+    </nav>
+    
+
+
+    <!-- Sección Principal -->
+    <section class="hero" id="inicio">
+        <h3>Por la educación</h3>
+        <h3>de nuestro país</h3>
+        <h1>Bienvenid@s a</h1> 
+        <h1>BIOFAUNA COLOMBIA </h1>
+    </section>
+    <br>
+    <section class="nosotros" id="nosotros">
+        <h2>Quiénes somos</h2>
+        <p>BIOFAUNA Colombia es un equipo de jóvenes apasionados por la tecnología y la innovación, 
+            unidos por un ideal común: “La educación es uno de los motores más importantes para 
+            impulsar un cambio ambiental positivo.”</p>
+        <br>
+        <p>Nuestra misión es ofrecer experiencias tecnológicas inmersivas que permitan a nuestra
+            comunidad conectar con distintos factores ambientales, generando conciencia y motivando 
+            la acción para proteger nuestro entorno. ¡Juntos, podemos ser el cambio que el planeta 
+            necesita!</p>
+    </section>
+
+    <!-- Sección de Servicios -->
+    <section class="services" id="servicios">
+        <h2>Nuestro Team</h2>
+        <div class="gallery2">
+            <button class="navbutton" onclick="prevSlide()">&#10094;</button>
+    
+            <div class="especiesEx">
+                <img id="image" src="" alt="image" class="especiesg">
+            </div>
+
+            <div class="textos">
+                <h1 id="name" class="tituloex">Nombre</h1>
+                <p id="description" class="parrafoex">
+                    
+                </p>
+            </div>
+    
+           
+    
+            <button class="navbutton" onclick="nextSlide()">&#10095;</button>
+        </div>
+
+        <script src="/js/funciones3.js"></script>
+        <script src="/js/funciones4.js"></script>
+    </section>
+    <br>
+    <br>
+    <div class="container">
+        <h1>Registro</h1>
+        <form action="" method="POST" id="formularioPersonas">
+            <label for="nombre_apellido"></label>
+            <input type="text" id="nombre_apellido" name="nombre_apellido" placeholder="Nombre Completo" required>
+            <label for="email"></label>
+            <input type="text" id="email" name="email " placeholder="Correo Electronico" required>
+            <label for="ciudad"></label>
+            <input type="text" id="ciudad" name="ciudad" placeholder="Ciudad" required>
+            <label for="departamento"></label>
+            <input type="text" id="departamento" name="departamento " placeholder="Departamento" required>
+
+
+            <label for="seleccion">Como te gustaria participar?:</label>
+            <select id="actividad" name="actividad" required>
+                <option value="" disabled selected>Selecciona una opcion</option>
+                <option value="opcion1">Sembrar cultura (participando en actividadescultrales) </option>
+                <option value="opcion2">Recolectar aceites (iniciativas de reciclaje y recoleccion)</option>
+                <option value="opcion3">Brindar charlas (ofrecer talleres o conferencias) </option>
+            </select>
+
+
+            </select>
+            <label for="horarios">Horarios:</label>
+            <select id="horarios" name="horarios" required>
+                <option value="" disabled selected>Selecciona una opcion</option>
+                <option value="opcion1">Mañana (8:00am a 10:00pm) </option>
+                <option value="opcion2">Tarde (1:00pm a 3:00pm)</option>
+                <option value="opcion3"> Noche (5:00pm a 7:00 pm)</option>
+            </select>
+
+            <label for="fechaInicio">Fecha de Inicio:</label>
+            <input type="date" id="fechaInicio" name="fechaInicio" required>
+
+      
+                <label for="opciones"></label><br>
+                <input type="checkbox" id="opcion" name="opciones" value="opcion">
+                <label for="opcion1">Acepto recibir informacion sobre actividades y eventos relacionados</label><br>
+                <input type="checkbox" id="opcion6" name="opciones" value="opcion6">
+                <label for="opcion2">Acepto que mis datos sean utilizados para fines de coordinacion de
+                    actividades</label><br>
+
+
+                <button type="submit" value="guardar" id="guardar">Registrarse</button>
+                <script src="/views/script.js"></script>
+            </form>
+    </div>
+
+    <footer class="footer">
+        <div class="footerc">
+            <p>&copy;2024 BIOFAUNA COLOMBIA Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+</body>
+</html>

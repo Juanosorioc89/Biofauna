@@ -1,0 +1,388 @@
+body {
+    font-family: "afacad", sans-serif;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #323C01;
+}
+
+header {
+    background-color: #5B7303;
+    height: 5%;
+}
+
+.banner1 {
+    background-image: url(/images/banner-1.png);
+    background-size: cover;
+    color: white;
+    height: 500px;
+    width: 100vw;
+    /* Hace que el div ocupe todo el ancho de la ventana de visualización */
+    margin-left: calc((100vw - 1440px) / -2);
+
+}
+
+.tittle1,
+.parrafo1 {
+    text-align: left;
+    width: 40%;
+    padding-left: 10%;
+    font-size: 25px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.tittle1 {
+    padding-top: 10%;
+    font-size: 30px;
+}
+
+.gallery1 {
+    background-color: #F0F1A1;
+    margin-top: 5%;
+    border-radius: 20px;
+    color: #323C01;
+    height: 300px;
+}
+
+.gallery1,
+.parrafo {
+    display: flex;
+    justify-content: center;
+    /* Centra el texto horizontalmente */
+    align-items: center;
+    /* Centra el texto verticalmente dentro del contenedor */
+    text-align: center;
+    /* Alinea el texto al centro */
+    background-color: #f7f7a7;
+    /* Color de fondo */
+    padding: 30px 20px;
+    /* Ajusta el espacio alrededor del texto para centrarlo verticalmente en el cuadro */
+    width: 100%;
+    height: 100%;
+    /* Asegura que ocupe toda la altura del contenedor */
+    box-sizing: border-box;
+    gap: 200px;
+}
+
+.navbutton {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #F0F1A1;
+    margin: 40px;
+}
+
+.imagesp {
+    width: 380px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid: 5px;
+    align-items: center;
+    gap: 5px;
+    height: 20%;
+
+}
+
+.imagesp1,
+.imagesp2,
+.imagesp3,
+.imagesp4 {
+    width: 200px;
+    margin-left: 35%;
+}
+
+.imagesp1 {
+    border-top-left-radius: 18px;
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 18px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.imagesp2 {
+    border-top-left-radius: 80px;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 80px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.imagesp3 {
+    border-top-left-radius: 80px;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 80px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.imagesp4 {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 16px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.parrafo {
+    text-align: right;
+    width: 50%;
+    float: right;
+    margin-right: 10%;
+    font-size: 23px;
+
+}
+
+.especiesE,
+.especiesEt {
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.especiesEt {
+    width: 60%;
+}
+
+.especiesE {
+    margin-top: 8%;
+}
+
+.gallery2 {
+    background-image: url(/images/banner\ 2.png);
+    height: 400px;
+    background-size: cover;
+}
+
+
+.gallery2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    border-radius: 20px;
+
+
+}
+
+.gallery2,
+.textos {
+    display: flex;
+    align-items: center;
+
+
+}
+
+.tituloex{
+    padding: 0%;
+    margin: 0%;
+}
+
+.parrafoex{
+    margin: 0%;
+    font-size:20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.textos {
+    text-align: center;
+    width: 30%;
+    margin-right: 5%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.especiesEx {
+    background-color: white;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    border-radius: 10%;
+}
+
+.especiesE {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+
+}
+
+
+.especiesEtp {
+    font-size: 20px;
+    width: 500px;
+    margin-bottom: 50px;
+    margin: 0px;
+}
+
+.especiesEt {
+    margin: 0px;
+}
+
+.tittle2,
+.parrafo2 {
+
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.especiesg {
+    width: 300px;
+    border-radius: 20px;
+}
+
+.fade {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.show {
+    opacity: 1;
+}
+
+.textos {
+    font-size: 16px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.mapa {
+    margin: 10%;
+    color: #ffffff;
+
+}
+
+.pov {
+    text-align: center;
+    /* Centra todo el contenido dentro del contenedor .pov */
+    padding: 20px;
+    background-color: #5B7303;
+    height: 400px;
+}
+
+.tittle3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: white;
+}
+
+
+.textopov {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.parrafopov {
+    font-size: 1em;
+    max-width: 600px;
+    /* Ajusta el ancho del párrafo */
+    margin: 3% auto;
+    /* Centra el párrafo */
+    padding: 15px;
+    /* Añade espacio alrededor del texto */
+    background-color: #f5f5f5;
+    /* Color de fondo (ajusta según prefieras) */
+    border-radius: 8px;
+    /* Bordes redondeados para darle mejor apariencia */
+    display: inline-block;
+    /* Permite que el fondo siga el ancho del contenido */
+}
+
+.container3{
+    background-color: #5B7303;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.gallery3 {
+    background-color: #5B7303;
+    width: 70%;
+    height: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textospov{
+    color: #f5f5f5;
+    height: 20%;
+    
+}
+
+.povespecies{
+    height: 380px;
+    width: auto;
+}
+
+.povimg{
+    height: 380px;
+    border-radius: 20px;
+}
+
+.parrafopov{
+    text-align: center;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 0;
+    padding-top: 0;
+    background-color: #F0F1A1;
+   
+}
+
+.footer{
+    background-color: #323C01;
+    color: white;
+    padding: 10%;
+    text-align: center;
+    height: 10px;
+}
+
+.footer .footerc{
+max-width: 100%;
+margin:0;
+padding: 0 10%;
+height: 5%;
+}
+
+
+/* Estilos de la barra de navegación */
+nav {
+    background-color: #323C01; /* Verde para el tema ecológico */
+    padding: 10px;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+nav ul li a:hover {
+    color: #f0f0f0;
+}
+

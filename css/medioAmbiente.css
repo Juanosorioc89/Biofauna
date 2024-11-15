@@ -1,0 +1,152 @@
+
+.titulo {
+    background-image: url(../Imagen/imagen_titulo.png);
+    background-size: cover;
+    background-position: center;
+    font-size: 40px;
+    color: #000407;
+    text-align: center;
+    padding: 1px 50px;
+}
+
+.titulo2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0vh;
+
+}
+
+.titulo2 h2 {
+    background-color: chartreuse;
+    text-align: center;
+    font-size: 20px;
+    padding: 5px;
+    color: #0d0e0d;
+    height: 20px;
+    width: 500px;
+    align-items: center;
+
+}
+
+.cambioclimatico {
+    background-image: url(../Imagen/Rectangle\ 1.png);
+    background-size: cover;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 100px auto;
+    height: 400px;
+
+    text-align: center;
+    border: none;
+}
+
+.titulo3 {
+    font-size: 24px;
+    color: rgb(8, 8, 8);
+    margin-bottom: 10px;
+}
+
+.parrafo {
+    font-size: 16px;
+    color: #0c0c0c;
+    margin-bottom: 20px;
+    text-align: left;
+    display: flex;
+    align-self: flex-start;
+}
+
+.circulos {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.circulo0 {
+    width: 200px;
+    height: 200px;
+    background-color: darkcyan;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-90%)
+}
+
+.circulo1 {
+    width: 200px;
+    height: 200px;
+    background-color: darkolivegreen;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%)
+}
+
+.circulo2 {
+    width: 200px;
+    height: 200px;
+    background-color: darkgreen;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%) left center;
+
+}
+
+.circulo3 {
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+    border-radius: 50%;
+    position: absolute;
+    /* Cambiado a 'absolute' para que pueda ser movido usando 'right' */
+    top: 50%;
+    /* Posiciona el círculo verticalmente al centro */
+    right: 0;
+    /* Mueve el círculo al extremo derecho del contenedor */
+    transform: translateY(-50%);
+    /* Centra el círculo verticalmente */
+
+}
+
+.footer{
+    background-color: #323C01;
+    color: white;
+    padding: 10%;
+    text-align: center;
+    height: 10px;
+}
+
+.footer .footerc{
+max-width: 100%;
+margin:0;
+padding: 0 10%;
+height: 5%;
+}
+
+/* Estilos de la barra de navegación */
+nav {
+    background-color: #323C01; /* Verde para el tema ecológico */
+    padding: 10px;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+nav ul li a:hover {
+    color: #f0f0f0;
+}

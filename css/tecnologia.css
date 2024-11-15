@@ -1,0 +1,476 @@
+/* Resetear márgenes y padding para asegurar consistencia entre navegadores */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "afacad", sans-serif;
+  /* Fuente legible y moderna */
+}
+
+/* Estilos generales para el body */
+body {
+  line-height: 1.6;
+  /* Espacio entre líneas para mejorar la lectura */
+  background-color: #f4f4f4;
+  /* Fondo claro para un look profesional */
+  color: #333;
+  /* Color del texto */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilos generales para imágenes */
+img {
+  max-width: 100%;
+  /* Evita que las imágenes sobrepasen el ancho del contenedor */
+  height: auto;
+  /* Mantiene la proporción original de las imágenes */
+  border-radius: 1em;
+  /* Bordes redondeados para una apariencia más pulida */
+}
+
+/* Estilos generales para secciones */
+section {
+  width: 97%;
+  max-width: 1500px;
+  /* Limitar el ancho máximo para evitar que el contenido se extienda demasiado en pantallas grandes */
+  margin: 0.5rem auto;
+  /* Espaciado entre secciones */
+  padding: 0rem;
+  background-color: white;
+  /* Fondo blanco para destacar cada sección */
+  border-radius: 1rem;
+  /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Sombra sutil para efecto flotante */
+}
+
+/* Estilos para encabezados principales */
+h1,
+h2 {
+  color: #2c3e50;
+  /* Color fuerte para mayor contraste */
+  margin-bottom: 20px;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+  section {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  /* Ajusta el tamaño de las imágenes para pantallas pequeñas */
+  .imagenes-activas_1_o,
+  .imagenes-activas_3_o,
+  .imagenes-activas_1_t,
+  .imagenes-activas_3_t {
+    width: 20vw;
+    /* Aumenta el tamaño en pantallas pequeñas */
+  }
+
+  .imagenes-activas_2_o,
+  .imagenes-activas_2_t {
+    width: 15vw;
+    /* Imagen central un poco más pequeña en pantallas pequeñas */
+  }
+
+}
+
+/* Centrar imagen y texto en la sección #titulo */
+.titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.article_d {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.introduccion {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Imagen que ocupa todo el ancho de la pantalla */
+.titulo img {
+  width: 100%;
+  /* Ocupa el 100% del ancho de la pantalla */
+  height: auto;
+  /* Ajusta la altura proporcionalmente */
+  position: relative;
+  opacity: 0.9;
+}
+
+/* Hacer que el título (h1) se muestre centrado encima de la imagen */
+#titulo h1 {
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #F0F2A2;
+  background-color: rgba(0, 0, 0, 0);
+  /* Fondo semitransparente para mejor legibilidad */
+  padding: 10px;
+  font-size: clamp(0.5rem, 2.5vw + 0.5rem, 3rem);
+}
+
+#introduccion img {
+  width: 100%;
+  /* Ocupa el 100% del ancho de la pantalla */
+  height: auto;
+  /* Ajusta la altura proporcionalmente */
+  position: relative;
+  opacity: 0.9;
+}
+
+#introduccion p {
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #F2F2F2;
+  background-color: rgba(0, 0, 0, 0);
+  /* Fondo semitransparente para mejor legibilidad */
+  padding: 10px;
+  font-size: clamp(0.4rem, 1.5vw + 0.3rem, 2rem);
+}
+
+#introduccion span {
+  font-weight: bold;
+  font-size: clamp(0.5rem, 1.6vw + 0.35rem, 2rem);
+}
+
+/* Evitar superposición con las secciones siguientes */
+#proyectos,
+#organizaciones,
+#implementacion,
+#testimonios {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+#proyectos,
+#implementacion,
+#descanso {
+  display: flex;
+  flex-direction: column;
+  /* Organiza el contenido en una columna */
+  align-items: center;
+  /* Centra el contenido horizontalmente */
+  justify-content: center;
+  /* Centra el contenido verticalmente */
+}
+
+#proyectos h2,
+#implementacion h2,
+#descanso h2 {
+  width: 70%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  color: #5A7302;
+  background-color: rgba(0, 0, 0, 0);
+  /* Fondo semitransparente para mejor legibilidad */
+  padding: 10px;
+  font-size: clamp(0.5rem, 2vw + 0.5rem, 2rem);
+  text-align: center;
+}
+
+#proyectos span,
+#implementacion span,
+#descanso span {
+  font-weight: bold;
+  color: #93A603;
+  font-size: clamp(0.5rem, 1.6vw + 0.35rem, 2rem);
+}
+
+#proyectos p,
+#implementacion p,
+#descanso p {
+  width: 90%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, -15%);
+  color: #000000;
+  background-color: rgba(0, 0, 0, 0);
+  /* Fondo semitransparente para mejor legibilidad */
+  padding: 10px;
+  font-size: clamp(0.4rem, 1.5vw + 0.3rem, 2rem);
+  text-align: center;
+}
+
+#proyectos .boton_p_p,
+.boton_p_n,
+#implementacion .boton_i_p,
+.boton_i_n {
+  background-size: cover;
+  /* Ajusta la imagen para que cubra el botón */
+  background-position: center;
+  width: 3rem;
+  /* Ajusta el ancho del botón */
+  height: 3rem;
+  /* Ajusta la altura del botón */
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+#proyectos .boton_p_p,
+#implementacion .boton_i_p {
+  background-image: url('../images/boton_de_navegacion_p.png');
+  /* Ruta de tu imagen */
+
+}
+
+#proyectos .boton_p_n,
+#implementacion .boton_i_n {
+  background-image: url('../images/boton_de_navegacion_n.png');
+  /* Ruta de tu imagen */
+}
+
+#proyectos img,
+#organizaciones img,
+#implementacion img,
+#testimonios img {
+  display: none;
+  /* oculta todas las imagnenes */
+}
+
+#proyectos .imagen-activa_p,
+#implementacion .imagen-activa_i,
+#organizaciones .imagenes-activas_1_o,
+#organizaciones .imagenes-activas_2_o,
+#organizaciones .imagenes-activas_3_o,
+#testimonios .imagenes-activas_1_t,
+#testimonios .imagenes-activas_2_t,
+#testimonios .imagenes-activas_3_t {
+  display: block;
+  /* Muestra solo la imagen activa */
+}
+
+.galeria_p,
+.galeria_i {
+  padding: 2rem;
+  margin: 0rem 0rem 2rem 0rem;
+  /* espacio debajo para que no sobrepase */
+  height: 22rem;
+  width: clamp(40rem, 1vw + 5rem, 70rem);
+  display: flex;
+  align-items: center;
+  /* Centra verticalmente el contenido */
+  justify-content: center;
+  /* Centra los elementos en la fila */
+  gap: 10px;
+  /* Espacio entre el botón "Anterior", la imagen y el botón "Siguiente" */
+}
+
+#organizaciones,
+#testimonios {
+  background-color: #93A603;
+  display: flex;
+  flex-direction: column;
+  /* Organiza el contenido en una columna */
+  align-items: center;
+  /* Centra el contenido horizontalmente */
+  justify-content: center;
+  /* Centra el contenido verticalmente */
+}
+
+#organizaciones .boton_o_p,
+.boton_o_n,
+#testimonios .boton_t_p,
+.boton_t_n {
+  position: absolute;
+  display: flex;
+  background-size: cover;
+  /* Ajusta la imagen para que cubra el botón */
+  background-position: center;
+  width: 3rem;
+  /* Ajusta el ancho del botón */
+  height: 3rem;
+  /* Ajusta la altura del botón */
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+  align-items: center;
+}
+
+#organizaciones .boton_o_p,
+#testimonios .boton_t_p {
+  background-image: url('../images/Boton_organizaciones_prev.png');
+  /* Ruta de tu imagen */
+  left: 6%;
+}
+
+#organizaciones .boton_o_n,
+#testimonios .boton_t_n {
+  background-image: url('../images/Boton_organizaciones_next.png');
+  /* Ruta de tu imagen */
+  right: 6%;
+}
+
+#organizaciones p,
+#testimonios p {
+  width: 90%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -25%);
+  color: #F2F2F2;
+  background-color: rgba(0, 0, 0, 0);
+  /* Fondo semitransparente para mejor legibilidad */
+  font-size: clamp(0.4rem, 1.5vw + 0.3rem, 2rem);
+  text-align: center;
+}
+
+#organizaciones span,
+#testimonios span {
+  font-weight: bold;
+  font-size: clamp(0.5rem, 1.6vw + 0.35rem, 2rem);
+}
+
+#organizaciones h2,
+#testimonios h2 {
+  width: 70%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  color: #F2F2F2;
+  background-color: rgba(0, 0, 0, 0);
+  /* Fondo semitransparente para mejor legibilidad */
+  padding: 10px;
+  font-size: clamp(0.5rem, 2vw + 0.5rem, 2rem);
+  text-align: center;
+}
+
+#organizaciones .imagenes-activas_1_o,
+#organizaciones .imagenes-activas_3_o,
+#testimonios .imagenes-activas_1_t,
+#testimonios .imagenes-activas_3_t {
+  position: absolute;
+  /* width: clamp(4rem, 10vw + 4rem, 20rem); Ajusta el ancho del botón
+  height: clamp(4rem, 10vw + 4rem, 20rem);
+  Ajusta la altura del botón */
+  width: 20vw;
+  /* Tamaño basado en el ancho de la pantalla */
+  max-width: 200px;
+  /* Tamaño máximo para pantallas grandes */
+}
+
+#organizaciones .imagenes-activas_1_o,
+#testimonios .imagenes-activas_1_t {
+  left: 12%;
+}
+
+#organizaciones .imagenes-activas_2_o,
+#testimonios .imagenes-activas_2_t {
+  left: 50%;
+  /* Centra la imagen en el contenedor */
+  transform: translateX(-50%);
+  /* Ajusta para centrar perfectamente */
+  position: absolute;
+  /* width: clamp(8rem, 10vw + 8rem, 40rem);  Ajusta el ancho del botón
+  height: clamp(8rem, 10vw + 8rem, 40rem); Ajusta la altura del botón */
+  width: 30vw;
+  /* Tamaño grande basado en el ancho de la pantalla */
+  max-width: 300px;
+}
+
+#organizaciones .imagenes-activas_3_o,
+#testimonios .imagenes-activas_3_t {
+  right: 12%;
+  /* Posiciona la imagen en la derecha */
+}
+
+#organizaciones .galeria_o {
+  position: relative;
+  padding: 1rem;
+  margin: 0rem 0rem 2rem 0rem;
+  /* espacio debajo para que no sobrepase */
+  height: 20rem;
+  width: 61rem;
+  display: flex;
+  align-items: center;
+  /* Centra verticalmente el contenido */
+  justify-content: center;
+  /* Centra los elementos en la fila */
+  gap: 10px;
+  /* Espacio entre el botón "Anterior", la imagen y el botón "Siguiente" */
+}
+
+#testimonios .galeria_t {
+  position: relative;
+  padding: 1rem;
+  margin: 0rem 0rem 2rem 0rem;
+  /* espacio debajo para que no sobrepase */
+  height: 20rem;
+  width: 61rem;
+  display: flex;
+  align-items: center;
+  /* Centra verticalmente el contenido */
+  justify-content: center;
+  /* Centra los elementos en la fila */
+  gap: 10px;
+  /* Espacio entre el botón "Anterior", la imagen y el botón "Siguiente" */
+}
+
+picture {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.galeria_t a {
+  align-items: center;
+  display: flex;
+  width: 30vw;
+  /* Tamaño grande basado en el ancho de la pantalla */
+  max-width: 300px;
+  height: 30vw;
+  /* Tamaño grande basado en el alto de la pantalla */
+  max-height: 300px;
+}
+
+.galeria_o img,
+.galeria_t img {
+  display: flex;
+  align-items: center;
+}
+
+/* Estilos de la barra de navegación */
+nav {
+  background-color: #323C01; /* Verde para el tema ecológico */
+  padding: 10px;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+  margin: 0 15px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+nav ul li a:hover {
+  color: #f0f0f0;
+}

@@ -1,0 +1,362 @@
+body {
+    font-family: "afacad", sans-serif;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #F0F1A1;
+}
+
+.head{
+    background-image: url(/images/banner\ ecohohar.png);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    height: 30vh;
+    text-align: center;
+}
+
+.titulo1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    margin-top:0;
+    font-size: 2em;
+}
+
+.parrafo1{
+    color:#323C01;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 20px;
+    margin-top: 5%;
+    margin-bottom: 7%;
+
+}
+.parrafop{
+padding-left: 10%;
+padding-right: 10%;
+padding-top:0;
+padding-bottom: 0;
+margin-bottom: 0;
+
+}
+.seccionp{
+    background-color: white;
+    border-radius: 20px;
+    height: 1000px;
+    color: #323C01;
+    text-align: center;
+
+}
+
+.productostittle, .tittle1{
+    padding: 10px;
+    font-size: 20px;
+    padding-left: 30%;
+    padding-right: 30%;
+    margin:0;
+    padding-bottom: 0;
+}
+
+.tittle1{
+    font-size: 26px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+
+/* .productos{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    gap: 40px;
+    align-items: center;
+    justify-content:center ;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 30px;
+
+}
+
+.producto{
+    width: 280px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+.card{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+} */
+
+.productos {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    gap: 20px;
+    max-width: 100%; /* Ancho máximo */
+   padding-left:19%;
+   padding-right:20%;
+   height:min-content;
+   align-items: center;
+  }
+  
+  .card {
+    position: relative;
+    width: 100%;
+    height: 370px;
+    perspective: 1000px;
+  }
+  
+  .card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  
+  .card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  
+  .card-front {
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card-front img {
+    max-width: 80%;
+    height: auto;
+  }
+  
+  .card-back {
+    background-color: #fff;
+    color: #333;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    flex-direction: column;
+  }
+  
+  .vermas {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4d5f3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .card-inner.flipped {
+    transform: rotateY(180deg);
+  }
+
+
+.vermas{
+    width: 40%;   
+    background-color: #323C01;
+    border-radius: 7px;
+    border: none;
+    color: white;
+    padding: 6px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.proceso{
+    text-align: center;
+    color: #323C01;
+    align-items: center;
+    position: relative;
+    display: inline-block;
+    margin-top:8% ;
+    align-items: center;
+    width: 100%;
+}
+
+.procesop{
+    display: flex;
+    width: 100%;
+}
+
+.textosp{
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 6%;
+    transform: translate(-50%, -50%);
+    padding-left: 40px;
+    font-size: 20px;
+}
+
+.procesoimg{
+    margin: 0;
+    display: block;
+    width: 100%;
+    padding: 0%;
+}
+
+.contacto{
+    background-image: url(/images/banner\ figuras.png);
+    background-size: cover;
+    height: 600px;
+    text-align: center;
+    margin: 0%;
+}
+
+.contactot{
+    color: #323C01;
+    text-shadow: #323C01;
+    padding-top: 5%;
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Formulario de contacto */
+
+.container {
+    background-color: #F0F2A2;
+    padding: 5%;
+    border-radius: 8px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    box-sizing: border-box;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 2%;
+    color: #323C01;
+    
+}
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+
+select {
+    background-color: #fff;
+}
+
+
+button[type="submit"] {
+    background-color: #5a7302;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color:#323C01;
+}
+
+
+input:focus,
+select:focus,
+button:focus {
+    border-color: #5a7302;
+    outline: none;
+}
+
+form {
+    padding: 20px;
+}
+
+
+form label,
+form input,
+form select {
+    margin-bottom: 10px;
+}
+.contactot{
+    font-size: 40px;
+}
+
+.footer{
+    background-color: #323C01;
+    color: white;
+    padding: 10%;
+    text-align: center;
+    height: 10px;
+}
+
+.footer .footerc{
+max-width: 100%;
+margin:0;
+padding: 0 10%;
+height: 5%;
+}
+
+/* Estilos de la barra de navegación */
+nav {
+    background-color: #323C01; /* Verde para el tema ecológico */
+    padding: 10px;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+nav ul li a:hover {
+    color: #f0f0f0;
+}

@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.container {
+    background-color: #F0F2A2;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+
+h1 {
+    text-align: center;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+
+select {
+    background-color: #fff;
+}
+
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+input:focus,
+select:focus,
+button:focus {
+    border-color: #5a7302;
+    outline: none;
+}
+
+form {
+    padding: 20px;
+}
+
+
+form label,
+form input,
+form select {
+    margin-bottom: 10px;
+}
+
+.footer{
+    background-color: #323C01;
+    color: white;
+    padding: 10%;
+    text-align: center;
+    height: 10px;
+}
+
+.footer .footerc{
+max-width: 100%;
+margin:0;
+padding: 0 10%;
+height: 5%;
+}

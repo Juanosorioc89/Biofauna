@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECO HOGAR </title>
+    <link rel="stylesheet" href="/css/formularioIndex.css">
+</head>
+<script src="java/funciones.js"></script>
+
+<body>
+
+    </section>
+    </Main>
+    <div class="container">
+        <h1> </h1>
+        <form id="formulario personas">
+            <label for="nombre-apellido"></label>
+            <input type="text" id="nombre-apellido" name="nombre-apellido" placeholder="Nombre Completo" required>
+            <label for="email"></label>
+            <input type="text" id="email" name="email " placeholder="Correo Electronico" required>
+            <label for="ciudad"></label>
+            <input type="text" id="ciudad" name="ciudad" placeholder="Ciudad" required>
+            <label for="departamento"></label>
+            <input type="text" id="departamento" name="departamento " placeholder="Departamento" required>
+
+
+            <label for="seleccion">Como te gustaria participar?:</label>
+            <select id="actividad" name="actividad" required>
+                <option value="" disabled selected>Selecciona una opcion</option>
+                <option value="opcion1">Sembrar cultura (participando en actividadescultrales) </option>
+                <option value="opcion2">Recolectar aceites (iniciativas de reciclaje y recoleccion)</option>
+                <option value="opcion3">Brindar charlas (ofrecer talleres o conferencias) </option>
+            </select>
+
+
+            </select>
+            <label for="horaros">Horarios:</label>
+            <select id="horarios" name="horarios" required>
+                <option value="" disabled selected>Selecciona una opcion</option>
+                <option value="opcion1">Mañana (8:00am a 10:00pm) </option>
+                <option value="opcion2">Tarde (1:00pm a 3:00pm)</option>
+                <option value="opcion3"> Noche (5:00pm a 7:00 pm)</option>
+            </select>
+
+            <label for="fecha_inicio">Fecha de Inicio:</label>
+            <input type="date" id="fecha_inicio" name="fecha_inicio" required>
+
+            <form action="/ruta/del/servidor" method="POST">
+                <label for="opciones"></label><br>
+                <input type="checkbox" id="opcion" name="opciones" value="opcion">
+                <label for="opcion1">Acepto recibir informacion sobre actividades y eventos relacionados</label><br>
+                <input type="checkbox" id="opcion6" name="opciones" value="opcion6">
+                <label for="opcion2">Acepto que mis datos sean utilizados para fines de coordinacion de
+                    actividades</label><br>
+
+
+                <button type="submit">Registrarse</button>
+            </form>
+    </div>
+
+    <footer class="footer">
+        <div class="footerc">
+            <p>&copy;2024 BIOFAUNA COLOMBIA Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
