@@ -1,26 +1,36 @@
 const Data = [
     {
         name: "Juan David Osorio",
-        description: "Desarrollador backend aplicaciones Web",
-        image: "/images/juanosorio.png"
+        description: "Desarrollador Backend de Aplicaciones Web en nuestro team Biofauna Colombia.",
+        image: "../images/juanosorio.png"
     },
     {
         name: "María Paula Márquez",
-        description: "Diseñadora Gráfica y Web, Desarrolladora web Investigadora de nuestro tema Fauna en colombia",
-        image: ""
+        description: "Diseñadora Gráfica y Web que desempeña la función de Desarrolladora Web e Investigadora en nuestro team Biofauna colombia.",
+        image: "../images/maria.jpeg"
     },
     {
-        name: "Jefferson",
-        description: "Diseñadora Gráfica y Web, Desarrolladora web Investigadora de nuestro tema Fauna en colombia",
-        image: "/images/jeffer.jpeg"
+        name: "Jefferson Ramirez",
+        description: "Ingeniero Mecatrónico que desempeña la función de Scrum Master en nuestro team Biofauna Colombia",
+        image: "../images/jeffer.jpeg"
+    },
+    {
+        name: "Nikol Jansasoy",
+        description: "Tec. Gestión Ambiental que desempeña la función de Desarrolladora Web e Investigadora en nuestro team Biofauna Colombia.",
+        image: "../images/nikol.png"
+    },
+    {
+        name: "Elena Palechor",
+        description: "Desarrolladora Frontend que desempeña la función de Desarrolladora Web e Investigadora en nuestro team Biofauna Colombia.",
+        image: "../images/elena.jpeg"
     },
     // Agrega más objetos según sea necesario
 ];
 
-let currentIndex = 0;
+let currentIndexfotos = 0;
 
 // Función para mostrar la especie actual con animación
-function showSlide(index) {
+function showSlideIndex(index) {
     const name = document.getElementById("name");
     const description = document.getElementById("description");
     const image = document.getElementById("image");
@@ -48,16 +58,16 @@ function showSlide(index) {
 }
 
 // Función para ir a la siguiente especie
-function nextSlide() {
-    currentIndex = (currentIndex + 1) % Data.length;
-    showSlide(currentIndex);
+function nextSlideIndex() {
+    currentIndexfotos = (currentIndexfotos + 1) % Data.length;
+    showSlideIndex(currentIndexfotos);
 }
 
 // Función para ir a la especie anterior
-function prevSlide() {
-    currentIndex = (currentIndex - 1 + Data.length) % Data.length;
-    showSlide(currentIndex);
+function prevSlideIndex() {
+    currentIndexfotos = (currentIndexfotos - 1 + Data.length) % Data.length;
+    showSlideIndex(currentIndexfotos);
 }
 
 // Mostrar la primera especie al cargar la página
-showSlide(currentIndex);
+showSlideIndex(currentIndexfotos);

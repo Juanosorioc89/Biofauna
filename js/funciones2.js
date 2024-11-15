@@ -2,10 +2,10 @@ const imageElement = document.getElementById('povimages'); // Asegúrate de obte
 let currentIndex2 = 0;  // Renombramos la variable aquí
 
 const images2 = [
-    'images/_3f56bfa6-2fc8-405f-8688-f2503e2b7b73.jpg',
-    'images/_29ffec3d-0362-4f64-be93-a9f8e7839910.jpg',
-    'images/_221e4b33-e89d-45a0-ab16-444526d99271.jpg',
-    'images/_930736c0-ec98-4e37-bfc5-b2a2825b6311.jpg'
+    '/images/_3f56bfa6-2fc8-405f-8688-f2503e2b7b73.jpg',
+    '/images/_29ffec3d-0362-4f64-be93-a9f8e7839910.jpg',
+    '/images/_221e4b33-e89d-45a0-ab16-444526d99271.jpg',
+    '/images/_930736c0-ec98-4e37-bfc5-b2a2825b6311.jpg'
 ];
 
 function updateImage2() {

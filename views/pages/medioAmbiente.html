@@ -5,23 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medioambiente</title>
-    <link rel="stylesheet" href="/css/medioAmbiente.css">
+    <link rel="stylesheet" href="/css/medioAmbiente1.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="/views">Inicio</a></li>
-            <li><a href="/views/pages/medioAmbiente.html">Contaminación</a></li>
-            <li><a href="/views/pages/especies.html">Fauna</a></li>
-            <li><a href="/views/pages/ecohogar.html">Ecohogar</a></li>
-            <li><a href="/views/pages/tecnologia.html">Tecnología</a></li>
-        </ul>
-    </nav>
-    
-   
+    <header>
+    </header>
     <main>
-        <section class="titulo" id="titulo">
+        <section class="titulo" id="banner1">
             <h1>La Deforestación y La Contaminación</h1>
         </section>
         <br>
@@ -31,62 +25,71 @@
             <br>
         </section>
         <section class="cambioclimatico">
-            <h3>Cambio Climático</h3>
-            <p>El principal desafío planetario es el cambio climático, ya que tiene amplios impactos en la
-                calidad de vida de las personas y en los ecosistemas. A nivel local, por otro lado, se suma la
-                contaminación atmosférica, por lo
-                riesgos asociados a salud</p>
-            <div class="circulos">
-                <button type="button" class="boton_mundo">mundo</button>
-                <button type="button" class="boton_persona">persona</button>
-                <button type="button" class="boton_industria">industria</button>
-                <button type="button" class="boton_arboles">arboles</button>
+            <button class="buttoncont" onclick="prevSlidecont()">&#10094;</button>
+            <div class="textosc">
+                <h3 id="titulo" class="tittle1">Nombre de el problema</h3>
+                <p id="parrafo" class="tittle1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed excepturi
+                    voluptates quas dolorem, nihil mollitia fuga error fugiat, ad aliquid tempore veniam corrupti
+                    tempora iste nulla obcaecati id optio rerum.</p>
+            </div>
+            </div>
+
+            <div class="galeriacont">
+                <img id="img_cont" src="" alt="Tipo" class="img_contaminacion">
+            </div>
+            <button class="buttoncont" onclick="nextSlidecont()">&#10095;</button>
+        </section>
+
+        <section class="deforestacion" id="deforestacion">
+            <div class="imagenb"><img src="/images/bombillo.svg" alt="Bombillo con plantas" title="Bombillo con planta"
+                    class="imagenb"></div>
+            <div class="textosdeforestacion">
+                <h3>La Deforestación</h3>
+                <p> Un problema crítico global causado por la tala indiscriminada, la expansión agrícola, la minería, el
+                    desarrollo energético, la construcción de infraestructuras, la producción de cocaína y la
+                    agricultura a
+                    pequeña escala. Estos factores degradan los ecosistemas y afectan la biodiversidad. Además, reducir
+                    la
+                    contaminación del aire es esencial para mejorar la salud pública y fortalecer las economías, ya que
+                    un
+                    aire más limpio promueve la productividad y disminuye los gastos en salud</p>
             </div>
 
         </section>
         <br>
         <br>
-        <section class="deforestacion" id="deforestacion">
-            <h3>La Deforestación</h3>
-            <p> Un problema crítico global causado por la tala indiscriminada, la expansión agrícola, la minería, el
-                desarrollo energético, la construcción de infraestructuras, la producción de cocaína y la agricultura a
-                pequeña escala. Estos factores degradan los ecosistemas y afectan la biodiversidad. Además, reducir la
-                contaminación del aire es esencial para mejorar la salud pública y fortalecer las economías, ya que un
-                aire más limpio promueve la productividad y disminuye los gastos en salud</p>
-            <img src="Imagen/small-plant-inside-light-bulb.jpg" alt="Bombillo con plantas" title="Bombillo con planta"
-                width="500px">
-        </section>
-        <br>
-        <br>
         <section class="exhibicion" id="exhibicion">
-            <h3>Extinción del Planeta Tierra</h3>
-            <p>Es el ser humano la primera fuente de contaminación en el planeta y en Colombia Esta realidad se debe a
-                varios factores que se entrelazan, siendo los más importantes la falta de conciencia, educación, cultura
-                y sentido de pertenencia</p>
-            <img src="Imagen/contaminacion.jpg" alt="Contaminación Industrial" title="Contaminación Indistrial"
-                width="500px">
+            <div class="textosex">
+                <h3>Extinción del Planeta Tierra</h3>
+                <p>Es el ser humano la primera fuente de contaminación en el planeta y en Colombia Esta realidad se debe
+                    a
+                    varios factores que se entrelazan, siendo los más importantes la falta de conciencia, educación,
+                    cultura
+                    y sentido de pertenencia</p>
+            </div>
         </section>
         <br>
-        <section class="hombre_gorrra" id="hombre_gorrra">
-            <img src="" alt="">
-            <article>
-                <p>Un ejemplo claro de los efectos de la contaminación se ve en Cali, que se ha convertido en uno de los
-                    principales contaminantes del río Cauca. La minería, las escombreras y las aguas residuales han
-                    devastado este cuerpo de agua, especialmente cuando el río entra al Valle del Cauca desde el
-                    territorio caucano. A lo largo de casi 20 kilómetros en su paso por Cali, el río recibe una cantidad
-                    significativa de contaminantes, lo que afecta tanto al medioambiente como a las comunidades que
-                    dependen de sus aguas.
-                </p>
-            </article>
+        <section class="hombre_gorra" id="hombre_gorra">
+            <div class="leñador">
+                <article>
+                    <p class="textoleñador">Un ejemplo claro de los efectos de la contaminación se ve en Cali, que se ha
+                        convertido en uno de los
+                        principales contaminantes del río Cauca. La minería, las escombreras y las aguas residuales han
+                        devastado este cuerpo de agua, especialmente cuando el río entra al Valle del Cauca desde el
+                        territorio caucano. A lo largo de casi 20 kilómetros en su paso por Cali, el río recibe una
+                        cantidad
+                        significativa de contaminantes, lo que afecta tanto al medioambiente como a las comunidades que
+                        dependen de sus aguas.
+                    </p>
+                </article>
+            </div>
         </section>
         <section class="resultados" id="resultados">
-            <h2>Resultados del estudio ambiental en municipios de Colombia</h2>
+            <h2 class="tittle3">Resultados del estudio ambiental en municipios de Colombia</h2>
             <br>
-            <img src="Imagen/Group resultados.png" alt="Fondo con bosque" title="Fondo con Bosque" width="500px">
-            <p>Estos datos revelan la urgencia de implementar políticas ambientales más efectivas y sostenibles en todo
-                el país para mitigar los daños que están afectando tanto al entorno natural como a la calidad de vida de
-                los habitantes.
-            </p>
+            <br>
+            <img src="/images/Group resultados.png" alt="Fondo con bosque" title="Fondo con Bosque"
+                class="resultadosimg">
             <!-- <div class="descripciones" id="descripciones">
                 <p>Contaminación del Agua 39.6 % de los municipios reportaron este problema como su principal
                     preocupación</p>
@@ -103,13 +106,14 @@
         </section>
     </main>
 
-    <footer class="footer">
-        <div class="footerc">
-            <p>&copy;2024 BIOFAUNA COLOMBIA Todos los derechos reservados</p>
-        </div>
+    <footer>
     </footer>
-    
-    <script></script>
+    <script src="/js/funcionesmedioa.js"></script>
+
+    <footer>
+        <p>&copy;2024 BIOFAUNA COLOMBIA Todos los derechos reservados</p>
+</footer>
+
 </body>
 
 </html>

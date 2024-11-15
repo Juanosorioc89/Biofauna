@@ -27,10 +27,8 @@
 
     <!-- Sección Principal -->
     <section class="hero" id="inicio">
-        <h3>Por la educación</h3>
-        <h3>de nuestro país</h3>
-        <h1>Bienvenid@s a</h1> 
-        <h1>BIOFAUNA COLOMBIA </h1>
+        <h3>Por la educación <br>de nuestro país</h3>
+        <h1>Bienvenid@s a <br>BIOFAUNA COLOMBIA </h1>
     </section>
     <br>
     <section class="nosotros" id="nosotros">
@@ -47,33 +45,27 @@
 
     <!-- Sección de Servicios -->
     <section class="services" id="servicios">
-        <h2>Nuestro Team</h2>
+        <h2>NUESTRO TEAM</h2>
         <div class="gallery2">
-            <button class="navbutton" onclick="prevSlide()">&#10094;</button>
-    
-            <div class="especiesEx">
+            <button class="navbutton" onclick="prevSlideIndex()">&#10094;</button>
+            <picture class="imagenes_nosotros">
                 <img id="image" src="" alt="image" class="especiesg">
-            </div>
-
-            <div class="textos">
-                <h1 id="name" class="tituloex">Nombre</h1>
-                <p id="description" class="parrafoex">
-                    
-                </p>
-            </div>
-    
-           
-    
-            <button class="navbutton" onclick="nextSlide()">&#10095;</button>
+            </picture>
+            <button class="navbutton" onclick="nextSlideIndex()">&#10095;</button>
         </div>
 
-        <script src="/js/funciones3.js"></script>
-        <script src="/js/funciones4.js"></script>
+        <div class="textos">
+            <h2 id="name" class="tituloex">Nombre</h2>
+            <p id="description" class="parrafoex">
+
+            </p>
+        </div>
+
     </section>
     <br>
     <br>
-    <div class="container">
-        <h1>Registro</h1>
+    <section class="container" id="container">
+        <h2>REGISTRO</h2>
         <form action="" method="POST" id="formularioPersonas">
             <label for="nombre_apellido"></label>
             <input type="text" id="nombre_apellido" name="nombre_apellido" placeholder="Nombre Completo" required>
@@ -118,13 +110,16 @@
                 <button type="submit" value="guardar" id="guardar">Registrarse</button>
                 <script src="/views/script.js"></script>
             </form>
-    </div>
+    </section>
 
     <footer class="footer">
         <div class="footerc">
             <p>&copy;2024 BIOFAUNA COLOMBIA Todos los derechos reservados</p>
         </div>
     </footer>
+
+    <!-- Sección de scripts -->
+    <script src="/js/funciones3.js"></script>
 
 </body>
 </html>
